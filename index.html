@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body style="background-image: url(images/school-background.jpg);">
+    <center>
+        <form>
+            <table style="color: white; background-color: rgba(0, 0, 0, 0.7);" width="60%" border="0" cellpadding="20" cellspacing="10">
+                <tr><td colspan="2" align="center"><h1>FORM</h1></td></tr>
+                <tr>
+                    <td>
+                        <label for="fname">First Name: &nbsp;&nbsp;&nbsp; <input id="fname" type="text" name="firstname" placeholder="Enter your name" maxlength="12"></label>
+                        
+                    </td>
+
+                    <td>
+                        <label for="lname">Last Name: &nbsp;&nbsp;&nbsp; <input id="lname" type="text" name="lastname" placeholder="Enter your name" maxlength="12"></label>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <label>Gender:</label>&nbsp;&nbsp;&nbsp;
+                        <label for="male">Male &nbsp; <input id="male" name="gender" value="male" type="radio"></label>
+                        <label for="female">Female &nbsp; <input id="female" name="gender" value="female" type="radio"></label>
+                    </td>
+                    <td>
+                        <label for="">Choose your Subjects:</label>&nbsp;&nbsp;
+                        <label for="eng">English <input id="eng" type="checkbox" name="field" value="eng"></label>&nbsp;
+                        <label for="urd">Urdu <input id="urd" type="checkbox" name="field" value="urd"></label>&nbsp;
+                        <label for="mth">Math <input id="mth" type="checkbox" name="field" value="mth"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">Select your City: 
+                            <select name="city" id="city">
+                                <option value="" selected hidden>None</option>
+                                <option value="karachi">Karachi</option>
+                                <option value="lahore">Lahore</option>
+                                <option value="islamabad">Islamabad</option>
+                                <option value="quetta">Quetta</option>
+                                <option value="peshawar">Peshawar</option>
+                                <option value="faisalabad">Faisalabad</option>
+                                <option value="hyderabad">Hyderbad</option>
+                            </select>
+                        </label>
+                    </td>
+                    <td>
+                        <label for="add">Address:</label>&nbsp;&nbsp;<textarea placeholder="Enter your address" name="address" id="add" cols="35" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mail">Email: &nbsp; <input id="mail" name="email" placeholder="Enter your email" type="email"></label>
+                    </td>
+                    <td>
+                        <label for="pass">Password: &nbsp; <input id="pass" type="password" name="password" placeholder="Enter your password"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">Date of Birth: &nbsp; <input id="dob" type="date" name="date of birth"></label>
+                    </td>
+                    <td>
+                        <label for="rate">Rate your Skills: &nbsp; <input id="rate" value="0" type="range" name="rate"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <label for="pic">Upload your Picture: &nbsp; <input id="pic" name="picture" type="file"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button width="20%">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>
